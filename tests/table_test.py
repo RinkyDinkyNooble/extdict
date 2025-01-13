@@ -1,13 +1,18 @@
 import sys
 import os
 import pytest
-sys.path.insert(
-    0, os.path.abspath(
-        os.path.join(
-            os.path.dirname(__file__), '..', r'extdict'
-        )
+
+path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__), '..', r'extdict'
     )
 )
+sys.path.insert(0, path)
+with open(".env", "w+") as env:
+    python_path = r"PYTHONPATH="+f'"{path}"'
+    if env.read() != python_path:
+        env.write(python_path)
+
 from table import Table
 
 example_table: Table | None = None
