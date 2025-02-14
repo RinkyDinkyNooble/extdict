@@ -1,6 +1,6 @@
 # Extended Dictionary Python Package
 
-This Python package that defines the `Table` class, which represents a table with content, read-only indices, and size constraints. It provides various methods and properties to manage a table with content, enforce size limits, and support operations such as adding, removing, and retrieving items.
+This Python package that defines the `Table` class, which represents a table with content, read-only indices, and size constraints. It provides various methods and properties to manage a table with content, enforce size limits, and support operations such as adding, removing, and retrieving items. pypi link: https://pypi.org/project/extdict/
 
 ## Features
 
